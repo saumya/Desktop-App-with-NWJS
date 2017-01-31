@@ -2,7 +2,7 @@
 (function(){
 	console.log('AppEntry');
 
-	var $ = require('jQuery');
+	//var $ = require('jQuery');
 	
 	// Create an empty context menu
 	var menu = new nw.Menu();
@@ -47,4 +47,11 @@
 	  return false;
 	}, false);
 	//
+	console.log($("#idBtnAdd1"));
+	$("#idBtnAdd1").on("click",function(event){
+		event.preventDefault(); 
+		console.log("add");
+		return false; 
+	});
+
 })();
