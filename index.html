@@ -11,6 +11,8 @@
 // Create an empty context menu
 var menu = new nw.Menu();
 
+var $ = require('jQuery');
+
 // Add some items with label
 menu.append(new nw.MenuItem({
   label: 'Platform',
@@ -31,7 +33,13 @@ menu.append(new nw.MenuItem({
   } 
 }));
 menu.append(new nw.MenuItem({ type: 'separator' }));
-menu.append(new nw.MenuItem({ label: 'Item C' }));
+menu.append(new nw.MenuItem({ 
+  label: 'jQuery' ,
+  click:function(){
+    
+    console.log($);
+  }
+}));
 
 // Hooks the "contextmenu" event
 document.body.addEventListener('contextmenu', function(ev) {
