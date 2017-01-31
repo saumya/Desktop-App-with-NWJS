@@ -51,6 +51,10 @@
 	$("#idBtnAdd1").on("click",function(event){
 		event.preventDefault(); 
 		console.log("add");
+
+		//var a = "<li class="list-group-item">Cras justo odio</li>"
+		$("#idNowAdditions").append('<li class="list-group-item">Cras justo odio</li>');
+
 		return false; 
 	});
 
