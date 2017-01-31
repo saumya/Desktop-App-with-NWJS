@@ -22,7 +22,14 @@ menu.append(new nw.MenuItem({
     alert(os.platform());
   }
 }));
-menu.append(new nw.MenuItem({ label: 'Item B' }));
+menu.append(new nw.MenuItem({ 
+  label: 'Realm', 
+  click: function(){
+    var Realm = require('realm');
+    alert("Realm");
+    //document.write('You are running on ', os.platform());
+  } 
+}));
 menu.append(new nw.MenuItem({ type: 'separator' }));
 menu.append(new nw.MenuItem({ label: 'Item C' }));
 
