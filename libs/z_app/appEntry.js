@@ -47,13 +47,18 @@
 	  return false;
 	}, false);
 	//
-	console.log($("#idBtnAdd1"));
+	//console.log($("#idBtnAdd1"));
 	$("#idBtnAdd1").on("click",function(event){
 		event.preventDefault(); 
 		console.log("add");
+		var dateVal = $("#idDate1").val();
+		var personVal = $("#idPerson1").val();
+		var forVal = $("#idFor1").val();
+		var ammountVal = $("#idAmmount1").val();
+		var s = dateVal+" : "+personVal+" : "+ammountVal+" : "+forVal
 
 		//var a = "<li class="list-group-item">Cras justo odio</li>"
-		$("#idNowAdditions").append('<li class="list-group-item">Cras justo odio</li>');
+		$("#idNowAdditions").append('<li class="list-group-item"> <span>'+s+'</span> <span><button type="button" class="btn btn-fail">Delete</button></span> </li>');
 
 		return false; 
 	});
