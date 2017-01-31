@@ -5,7 +5,7 @@
 //console.log(Realm);
 
 var windowOptions = { 
-	width:800, 
+	width:1000, 
 	height:600
 };
 nw.Window.open('index.html', windowOptions , function(win) {});
