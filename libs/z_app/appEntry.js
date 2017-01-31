@@ -2,6 +2,32 @@
 (function(){
 	console.log('AppEntry');
 
+	$("#idAddScreenView").show();
+	$("#idViewScreenView").hide();
+
+	$("#idBtnAdd2").on("click",function(event){
+		event.preventDefault();
+
+		$("#idAddScreenView").show();
+		$("#idViewScreenView").hide();
+
+		$("#idBtnAdd2Li").addClass("active");
+		$("#idBtnView2Li").removeClass("active");
+
+		return false;
+	});
+	$("#idBtnView2").on("click",function(event){
+		event.preventDefault();
+		
+		$("#idAddScreenView").hide();
+		$("#idViewScreenView").show();
+
+		$("#idBtnAdd2Li").removeClass("active");
+		$("#idBtnView2Li").addClass("active");
+		
+		return false;
+	});
+
 	//var $ = require('jQuery');
 	
 	// Create an empty context menu
