@@ -50,12 +50,17 @@
 	//console.log($("#idBtnAdd1"));
 	$("#idBtnAdd1").on("click",function(event){
 		event.preventDefault(); 
-		console.log("add");
+		//console.log("add");
+		
+		// id : for the table
+		var idD = new Date();
+		var idV = idD.getTime();
+
 		var dateVal = $("#idDate1").val();
 		var personVal = $("#idPerson1").val();
 		var forVal = $("#idFor1").val();
 		var ammountVal = $("#idAmmount1").val();
-		var s = dateVal+" : "+personVal+" : "+ammountVal+" : "+forVal
+		var s = idV+" : "+dateVal+" : "+personVal+" : "+ammountVal+" : "+forVal
 
 		//var a = "<li class="list-group-item">Cras justo odio</li>"
 		$("#idNowAdditions").prepend('<li class="list-group-item"> <span>'+s+'</span> <span><button type="button" class="btn btn-danger">Delete</button></span> </li>');
