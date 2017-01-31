@@ -58,7 +58,7 @@
 		var s = dateVal+" : "+personVal+" : "+ammountVal+" : "+forVal
 
 		//var a = "<li class="list-group-item">Cras justo odio</li>"
-		$("#idNowAdditions").prepend('<li class="list-group-item"> <span>'+s+'</span> <span><button type="button" class="btn btn-fail">Delete</button></span> </li>');
+		$("#idNowAdditions").prepend('<li class="list-group-item"> <span>'+s+'</span> <span><button type="button" class="btn btn-danger">Delete</button></span> </li>');
 
 		return false; 
 	});
