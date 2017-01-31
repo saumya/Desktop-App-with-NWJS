@@ -51,10 +51,11 @@
 	$("#idBtnAdd1").on("click",function(event){
 		event.preventDefault(); 
 		//console.log("add");
-		
+
 		// id : for the table
-		var idD = new Date();
-		var idV = idD.getTime();
+		//var idD = new Date();
+		//var idV = idD.getTime();
+		var idV = Date.now();
 
 		var dateVal = $("#idDate1").val();
 		var personVal = $("#idPerson1").val();
