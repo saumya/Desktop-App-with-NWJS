@@ -4,4 +4,8 @@
 //var Realm = require('realm');
 //console.log(Realm);
 
-nw.Window.open('index.html', {}, function(win) {});
+var windowOptions = { 
+	width:800, 
+	height:600
+};
+nw.Window.open('index.html', windowOptions , function(win) {});
