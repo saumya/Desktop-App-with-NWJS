@@ -13,9 +13,13 @@ var menu = new nw.Menu();
 
 // Add some items with label
 menu.append(new nw.MenuItem({
-  label: 'Item A',
+  label: 'Platform',
   click: function(){
-    alert('You have clicked at "Item A"');
+    //alert('You have clicked at "Item A"');
+    // get the system platform using node.js
+    var os = require('os');
+    //document.write('You are running on ', os.platform());
+    alert(os.platform());
   }
 }));
 menu.append(new nw.MenuItem({ label: 'Item B' }));
