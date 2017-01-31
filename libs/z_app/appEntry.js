@@ -62,5 +62,10 @@
 
 		return false; 
 	});
+	$("#idBtnClear1").on("click",function(event){
+		event.preventDefault();
+		$("#idNowAdditions").html("");
+		return false;
+	})
 
 })();
