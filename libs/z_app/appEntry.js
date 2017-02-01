@@ -2,11 +2,8 @@
 (function(){
 	console.log('AppEntry');
 
+	// Example Module
 	var myTemp = require('./libs/z_app/myModules/temp.module.js');
-	
-	console.log(myTemp);
-	myTemp.temp.init();
-	myTemp.temp.testLog();
 	console.log(myTemp);
 
 
@@ -16,7 +13,7 @@
 	$("#idBtnAdd2").on("click",function(event){
 		event.preventDefault();
 
-		myTemp.temp.testLog();
+		//myTemp.temp.testLog();// Test Call
 
 		$("#idAddScreenView").show();
 		$("#idViewScreenView").hide();
@@ -29,7 +26,7 @@
 	$("#idBtnView2").on("click",function(event){
 		event.preventDefault();
 
-		myTemp.temp.testLog();
+		//myTemp.temp.testLog();// Test Call
 		
 		$("#idAddScreenView").hide();
 		$("#idViewScreenView").show();
@@ -101,8 +98,25 @@
 		var ammountVal = $("#idAmmount1").val();
 		var s = idV+" : "+dateVal+" : "+personVal+" : "+ammountVal+" : "+forVal
 
+		var that = this;
+		//var a = $('<div>Hello</div>');
+		var a = $('<li class="list-group-item"> <span>'+s+'</span> <span><button id="'+idV+'" type="button" class="btn btn-danger">Delete</button></span> </li>');
+		a.on("click",function(event){
+			event.preventDefault();
+			
+			//console.log('event',event);
+			//console.log('event.target',event.target);
+			//console.log('event.target.id',event.target.id);
+
+			onDeleteData(event.target.id);
+
+			return false;
+		})
 		//var a = "<li class="list-group-item">Cras justo odio</li>"
-		$("#idNowAdditions").prepend('<li class="list-group-item"> <span>'+s+'</span> <span><button type="button" class="btn btn-danger">Delete</button></span> </li>');
+		
+		//$("#idNowAdditions").prepend('<li class="list-group-item"> <span>'+s+'</span> <span><button id="'+idV+'" type="button" class="btn btn-danger clsRowDelete">Delete</button></span> </li>');
+
+		$("#idNowAdditions").prepend(a);
 
 		return false; 
 	});
@@ -110,6 +124,13 @@
 		event.preventDefault();
 		$("#idNowAdditions").html("");
 		return false;
-	})
+	});
+
+	var onDeleteData = function(id){
+		console.log('onDeleteData:id:',id);
+	}
+	
+
+	
 
 })();
