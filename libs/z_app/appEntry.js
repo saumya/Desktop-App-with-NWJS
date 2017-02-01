@@ -6,6 +6,8 @@
 	var myTemp = require('./libs/z_app/myModules/temp.module.js');
 	console.log(myTemp);
 
+	var filledDataObj = [];
+
 
 	$("#idAddScreenView").show();
 	$("#idViewScreenView").hide();
@@ -98,6 +100,9 @@
 		var ammountVal = $("#idAmmount1").val();
 		var s = idV+" : "+dateVal+" : "+personVal+" : "+ammountVal+" : "+forVal
 
+		var obj = { id:idV, date:dateVal, personName:personVal, ammount:ammountVal, paidFor:forVal }
+		filledDataObj.push(obj);
+
 		var that = this;
 		//var a = $('<div>Hello</div>');
 		var a = $('<li class="list-group-item"> <span>'+s+'</span> <span><button id="'+idV+'" type="button" class="btn btn-danger">Delete</button></span> </li>');
@@ -117,6 +122,8 @@
 		//$("#idNowAdditions").prepend('<li class="list-group-item"> <span>'+s+'</span> <span><button id="'+idV+'" type="button" class="btn btn-danger clsRowDelete">Delete</button></span> </li>');
 
 		$("#idNowAdditions").prepend(a);
+
+		console.log(filledDataObj);
 
 		return false; 
 	});
