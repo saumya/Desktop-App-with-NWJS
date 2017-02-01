@@ -1,7 +1,7 @@
 Desktop Application with NWjs
 ============================
 
-Done with [Nw.js][1]
+Done with [NW.js][1]
 
 Run from SDK tools
 
