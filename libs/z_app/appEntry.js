@@ -2,11 +2,21 @@
 (function(){
 	console.log('AppEntry');
 
+	var myTemp = require('./libs/z_app/myModules/temp.module.js');
+	
+	console.log(myTemp);
+	myTemp.temp.init();
+	myTemp.temp.testLog();
+	console.log(myTemp);
+
+
 	$("#idAddScreenView").show();
 	$("#idViewScreenView").hide();
 
 	$("#idBtnAdd2").on("click",function(event){
 		event.preventDefault();
+
+		myTemp.temp.testLog();
 
 		$("#idAddScreenView").show();
 		$("#idViewScreenView").hide();
@@ -18,6 +28,8 @@
 	});
 	$("#idBtnView2").on("click",function(event){
 		event.preventDefault();
+
+		myTemp.temp.testLog();
 		
 		$("#idAddScreenView").hide();
 		$("#idViewScreenView").show();
