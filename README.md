@@ -1,8 +1,10 @@
 Desktop Application with NWjs
 ============================
-	Done with [Nw.js][1]
+
+Done with [Nw.js][1]
 
 Run from SDK tools
+
 ```
 cd /Users/saumya/Documents/2_dev/3_apps/5_nwjs/1_chaos/src 
 ../nwjs-sdk-v0.20.0-osx-x64/nwjs.app/Contents/MacOS/nwjs .
