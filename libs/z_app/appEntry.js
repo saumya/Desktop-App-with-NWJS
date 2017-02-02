@@ -132,20 +132,18 @@
 		$("#idNowAdditions").html("");
 		return false;
 	});
+	$("#idBtnDone1").on("click",function(event){
+		event.preventDefault();
+		console.group("Save the Data", "========= WIP =========");
+		console.log(filledDataObj)
+		console.groupEnd();
+		return false;
+	});
 
 	var onDeleteData = function(id){
-		console.log('onDeleteData:id:',id);
+		console.group('onDeleteData:id:',id);
 		console.log(filledDataObj);
 
-		console.log('===========================================');
-		console.log("TODO: Remove the selected id from the Array");
-		console.log('===========================================');
-		/*
-		for (var i = fil
-			/*edDataObj.length - 1; i >= 0; i--) {
-			filledDataObj[i]
-		}
-		*/
 		for (var i = 0; i < filledDataObj.length; i++) {
 			//filledDataObj[i]
 			console.log(filledDataObj[i].id,'::',Number(id));
@@ -157,6 +155,7 @@
 		}
 
 		console.log(filledDataObj);
+		console.groupEnd();
 	}
 	
 
