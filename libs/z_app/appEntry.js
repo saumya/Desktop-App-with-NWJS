@@ -131,6 +131,7 @@
 	});
 	$("#idBtnClear1").on("click",function(event){
 		event.preventDefault();
+		filledDataObj = [];
 		$("#idNowAdditions").html("");
 		return false;
 	});
