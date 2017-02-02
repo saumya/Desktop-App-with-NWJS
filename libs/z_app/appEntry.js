@@ -107,13 +107,17 @@
 
 		var that = this;
 		//var a = $('<div>Hello</div>');
-		var a = $('<li class="list-group-item"> <span>'+s+'</span> <span><button id="'+idV+'" type="button" class="btn btn-danger">Delete</button></span> </li>');
+		var a = $('<li class="list-group-item" id='+idV+"li"+'> <span>'+s+'</span> <span><button id="'+idV+'" type="button" class="btn btn-danger">Delete</button></span> </li>');
 		a.on("click",function(event){
 			event.preventDefault();
 			
 			//console.log('event',event);
-			//console.log('event.target',event.target);
+			console.log('event.target',event.target);
 			//console.log('event.target.id',event.target.id);
+
+			var idLi = '#'+event.target.id+'li';
+			console.log($(idLi))
+			$(idLi).remove();
 
 			onDeleteData(event.target.id);
 
