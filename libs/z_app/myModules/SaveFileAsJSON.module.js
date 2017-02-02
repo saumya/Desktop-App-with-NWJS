@@ -9,9 +9,12 @@
 var fs = require('fs');
 var path = require('path');
 
+var file = 'my-settings-file.json';
+var filePath = path.join(nw.App.dataPath, file);
+
 function saveSettings (settings, callback) {
-    var file = 'my-settings-file.json';
-    var filePath = path.join(nw.App.dataPath, file);
+    //var file = 'my-settings-file.json';
+    //var filePath = path.join(nw.App.dataPath, file);
     fs.writeFile(filePath, settings, function (err) {
         if (err) {
             console.info("There was an error attempting to save your data.");
@@ -35,4 +38,22 @@ saveSettings(mySettings, function () {
 });
 */
 
+function getSettings(callback){
+    //var file = 'my-settings-file.json';
+    //var filePath = path.join(nw.App.dataPath, file);
+    
+    fs.readFile(filePath, function (err) {
+        if (err) {
+            console.info("There was an error attempting to save your data.");
+            console.warn(err.message);
+            return;
+        } else if (callback) {
+            callback();
+        }
+    });
+    
+}
+
 module.exports.saveSettings = saveSettings;
+module.exports.getSettings = getSettings;
+//

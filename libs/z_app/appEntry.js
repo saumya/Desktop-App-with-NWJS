@@ -159,6 +159,17 @@
 		console.groupEnd();
 		return false;
 	});
+	$("#idBtnGetData1").on("click",function(event){
+		event.preventDefault();
+		console.group("OnGetData");
+		console.log('event',event);
+
+		SaveFileAsJSON.getSettings(function(){ console.log('SaveFileAsJSON:getSettings:DONE'); })
+
+
+		console.groupEnd();
+		return false;
+	});
 
 	var onDeleteData = function(id){
 		console.group('onDeleteData:id:',id);
