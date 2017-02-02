@@ -3,8 +3,10 @@
 	console.log('AppEntry');
 
 	// Example Module
-	var myTemp = require('./libs/z_app/myModules/temp.module.js');
-	console.log(myTemp);
+	//var myTemp = require('./libs/z_app/myModules/temp.module.js');
+	var SaveFileAsJSON = require('./libs/z_app/myModules/SaveFileAsJSON.module.js');
+	//console.log(myTemp);
+	//console.log(SaveFileAsJSON);
 
 	var filledDataObj = [];
 
@@ -135,7 +137,20 @@
 	$("#idBtnDone1").on("click",function(event){
 		event.preventDefault();
 		console.group("Save the Data", "========= WIP =========");
-		console.log(filledDataObj)
+		//console.log(filledDataObj);
+
+		//console.log(SaveFileAsJSON);
+		//var mySettings = { "language": "en", "theme": "dark" }
+		//SaveFileAsJSON.saveSettings(JSON.stringify(mySettings),function(){ console.log("SAVED!!"); })
+
+		// JSON Dance : JSON.parse() / JSON.stringify()
+
+		//console.log(JSON.stringify(filledDataObj));
+
+		SaveFileAsJSON.saveSettings(JSON.stringify(filledDataObj),function(){ console.log("SAVED!!"); })
+
+
+
 		console.groupEnd();
 		return false;
 	});
