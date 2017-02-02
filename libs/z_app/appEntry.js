@@ -135,6 +135,28 @@
 
 	var onDeleteData = function(id){
 		console.log('onDeleteData:id:',id);
+		console.log(filledDataObj);
+
+		console.log('===========================================');
+		console.log("TODO: Remove the selected id from the Array");
+		console.log('===========================================');
+		/*
+		for (var i = fil
+			/*edDataObj.length - 1; i >= 0; i--) {
+			filledDataObj[i]
+		}
+		*/
+		for (var i = 0; i < filledDataObj.length; i++) {
+			//filledDataObj[i]
+			console.log(filledDataObj[i].id,'::',Number(id));
+			if(filledDataObj[i].id===Number(id)){
+				console.log("======== DELETE =========");
+				filledDataObj.splice(i,1);
+				break;
+			}
+		}
+
+		console.log(filledDataObj);
 	}
 	
 
