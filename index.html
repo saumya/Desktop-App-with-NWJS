@@ -178,11 +178,33 @@
 
 <div class="row" id="idViewScreenView">
   
-  <div> WIP : View Screen </div>
-  <div class="btn-group" role="group" aria-label="...">
-    <button type="button" class="btn btn-success" id="idBtnGetData1">GetData</button>
-    <button type="button" class="btn btn-danger">Clear All</button>
+  <div class="col-md-12">
+    <div class="btn-group" role="group" aria-label="...">
+      <button type="button" class="btn btn-success" id="idBtnGetData1">GetData</button>
+      <!-- <button type="button" class="btn btn-danger">Clear All</button> -->
+    </div>
   </div>
+  
+  <div class="col-md-6" style="margin-top: 1em;">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <!-- <h3 class="panel-title">Saved Data</h3> -->
+        <h3 class="panel-title" id="idTotalHeading"></h3>
+      </div>
+      <div class="panel-body">
+
+        <div style="padding-top: 0.5em;">
+        <ul id="idSavedData" class="list-group">
+          <!--
+          <li class="list-group-item">Cras justo odio</li>
+          -->
+        </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
 
 </div>
 

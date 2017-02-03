@@ -205,8 +205,13 @@
 
 		var l = jsonData.length;
 		var obj = null;
+		var row = null;
+		var total = 0;
+		
 		for (var i = 0; i < l; i++) {
 			obj = jsonData[i];
+			
+			/*
 			console.log(obj);
 			
 			console.log(obj.id);
@@ -214,6 +219,15 @@
 			console.log(obj.personName);
 			console.log(obj.ammount);
 			console.log(obj.paidFor);
+			*/
+			
+			total += Number(obj.ammount);
+
+			row = $('<li class="list-group-item" id='+obj.id+"li"+'> <span>'+obj.personName+':'+obj.ammount+':'+obj.paidFor+':'+obj.date+'</span></li>');
+			$("#idSavedData").prepend(row);
+
+			//$('#idTotalHeading').val("hello");
+			$('#idTotalHeading').html('<div>Total Ammount : '+total+'</div>');
 		}
 
 		console.groupEnd();
