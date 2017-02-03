@@ -162,9 +162,20 @@
 	$("#idBtnGetData1").on("click",function(event){
 		event.preventDefault();
 		console.group("OnGetData");
-		console.log('event',event);
+		//console.log('event',event);
 
-		SaveFileAsJSON.getSettings(function(){ console.log('SaveFileAsJSON:getSettings:DONE'); })
+		//var that = this;
+
+		SaveFileAsJSON.getSettings(function(fileData){ 
+			console.log(fileData);
+			
+			var jData = JSON.parse(fileData);
+			console.log(jData.length,jData);
+
+			onGotJSON(jData);
+
+			console.log('SaveFileAsJSON:getSettings:DONE'); 
+		})
 
 
 		console.groupEnd();
@@ -186,6 +197,25 @@
 		}
 
 		console.log(filledDataObj);
+		console.groupEnd();
+	}
+
+	var onGotJSON = function(jsonData){
+		console.group('onGotJSON');
+
+		var l = jsonData.length;
+		var obj = null;
+		for (var i = 0; i < l; i++) {
+			obj = jsonData[i];
+			console.log(obj);
+			
+			console.log(obj.id);
+			console.log(obj.date);
+			console.log(obj.personName);
+			console.log(obj.ammount);
+			console.log(obj.paidFor);
+		}
+
 		console.groupEnd();
 	}
 	

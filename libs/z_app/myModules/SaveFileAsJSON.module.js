@@ -42,13 +42,13 @@ function getSettings(callback){
     //var file = 'my-settings-file.json';
     //var filePath = path.join(nw.App.dataPath, file);
     
-    fs.readFile(filePath, function (err) {
+    fs.readFile(filePath, 'utf8' , function (err,data) {
         if (err) {
             console.info("There was an error attempting to save your data.");
             console.warn(err.message);
             return;
         } else if (callback) {
-            callback();
+            callback(data);
         }
     });
     
