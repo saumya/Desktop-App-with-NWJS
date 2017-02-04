@@ -8,13 +8,13 @@
 										{className: 'greeting'},
 										'Hello, world!'
 										);
-	ReactDOM.render(
-		element,
-		document.getElementById('react-app')
-	);
+	ReactDOM.render( element, document.getElementById('react-app') );
 	*/
 
+	//ReactDOM.render(<h1>React!</h1>,document.getElementById('react-app'));
 	
+
+
 	// Example Module
 	//var myTemp = require('./libs/z_app/myModules/temp.module.js');
 	var SaveFileAsJSON = require('./libs/z_app/myModules/SaveFileAsJSON.module.js');
