@@ -203,6 +203,9 @@
 	var onGotJSON = function(jsonData){
 		console.group('onGotJSON');
 
+		$('#idTotalHeading').html("");
+		$("#idSavedData").html("");
+
 		var l = jsonData.length;
 		var obj = null;
 		var row = null;
