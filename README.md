@@ -1,7 +1,17 @@
 Desktop Application with NWjs
 ============================
 
-Done with [NW.js][1]
+ - Done with [NWjs][1] for desktop Application
+ - Prototype is ready now. Need to implement the actual application
+
+TODO
+========== 
+ - Research for the Database options
+ - Research for the Frontend toolset / libs / frameworks
+ - Application architecture
+ - Start implementing
+
+
 
 Run from SDK tools
 
