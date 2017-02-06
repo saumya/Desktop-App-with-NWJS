@@ -6,10 +6,10 @@ Desktop Application with NWjs
 
 TODO
 ========== 
- - Research for the Database options
- - Research for the Frontend toolset / libs / frameworks
- - Application architecture
- - Start implementing
+ - Research
+  - Research for the Database options
+  - Research for the Frontend toolset / libs / frameworks
+  - Application architecture
 
 
 
