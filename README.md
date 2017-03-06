@@ -6,7 +6,7 @@ Desktop Application with NWjs
 
 TODO
 ========== 
- - Research
+  - Research
   - Research for the Database options
   - Research for the Frontend toolset / libs / frameworks
   - Application architecture
