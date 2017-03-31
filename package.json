@@ -13,6 +13,7 @@
     "url": "git://github.com/username/repository.git"
   },
   "dependencies": {
+    "http-shutdown": "^1.2.0",
     "jQuery": "^1.7.4",
     "pouchdb": "^6.1.1",
     "realm": "^0.15.4"

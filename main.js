@@ -5,7 +5,11 @@
 //console.log(Realm);
 
 var windowOptions = { 
-	width:1000, 
+	width:400, 
 	height:600
 };
-nw.Window.open('index.html', windowOptions , function(win) {});
+// UI Application
+//nw.Window.open('index.html', windowOptions , function(win) {});
+
+// NodeJS Integration
+nw.Window.open('home.html', windowOptions , function(win) {});
