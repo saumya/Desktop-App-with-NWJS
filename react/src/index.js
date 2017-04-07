@@ -2,7 +2,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import AppContainer from './container/App.container'
+
 ReactDOM.render(
-    <div>React</div>,
+    <AppContainer />,
     document.getElementById('react-app')
 );
