@@ -1,7 +1,11 @@
-
+#
+#
 node_modules/
-
+#
 libs/bootstrap-dist/
 libs/jquery/
 libs/react/
 libs/db/
+#
+react/build-babel/
+react/build/

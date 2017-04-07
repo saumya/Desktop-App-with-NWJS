@@ -12,4 +12,7 @@ var windowOptions = {
 //nw.Window.open('index.html', windowOptions , function(win) {});
 
 // NodeJS Integration
-nw.Window.open('home.html', windowOptions , function(win) {});
+//nw.Window.open('home.html', windowOptions , function(win) {});
+
+// React App
+nw.Window.open('home-react.html', windowOptions , function(win) {});
