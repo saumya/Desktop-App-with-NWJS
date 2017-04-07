@@ -6,7 +6,7 @@
   "scripts": {
     "2BabelJS": "babel --presets react,es2015 react/src --out-dir react/build-babel",
     "2PackJS": "webpack react/build-babel/index.js react/build/bundle.js",
-    "theapp": "node_modules/.bin/nw"
+    "theapp": "node_modules/.bin/nw ./"
   },
   "author": "saumya",
   "license": "MIT",
