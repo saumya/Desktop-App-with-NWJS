@@ -6,6 +6,17 @@ libs/bootstrap-dist/
 libs/jquery/
 libs/react/
 libs/db/
-#
+
+############ Build Folders ###################
+
+##### Generated JS files from HAXE #####
+
+react/src/haxeJS/
+
+##### Generated build files ##################
+
 react/build-babel/
 react/build/
+
+
+##############################################

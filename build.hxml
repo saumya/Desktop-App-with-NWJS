@@ -1,0 +1,39 @@
+#
+# Compiles the .hx files to .js
+####################################################################
+## -main is Not Needed: As the main is now from JS file itsef 
+####################################################################
+# Just here for reference, not needed
+##-main HaxeJSApp
+##-lib react
+##-js src-haxe/bin/app.js
+##-cp src-haxe/src
+##--next
+####################################################################
+## These will output the .JS files to be consumed by Babel
+####################################################################
+-lib react 
+##-D js-classic
+##-D js-es5
+-js react/src/haxeJS/ViewOne.js 
+-cp react/src-haxe/ 
+com.saumya.view.ViewOne
+
+--next 
+
+-lib react 
+##-D js-classic
+##-D js-es5
+-js react/src/haxeJS/ViewTwo.js 
+-cp react/src-haxe/ 
+com.saumya.view.ViewTwo
+
+--next 
+
+-lib react 
+-js react/src/haxeJS/ViewList.js 
+-cp react/src-haxe/ 
+com.saumya.view.ViewList
+####################################################################
+## NEXT is compile these with Babel
+####################################################################

@@ -4,6 +4,7 @@
   "description": "An application",
   "main": "main.js",
   "scripts": {
+    "2HaxeJS": "haxe build.hxml",
     "2BabelJS": "babel --presets react,es2015 react/src --out-dir react/build-babel",
     "2PackJS": "webpack react/build-babel/index.js react/build/bundle.js",
     "theapp": "node_modules/.bin/nw ./"
