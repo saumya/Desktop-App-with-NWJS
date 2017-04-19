@@ -20,8 +20,8 @@ class ViewTwo extends ReactComponent{
   override public function render(){
     return jsx('
             <div style={{margin:"10px", border:"red 4px solid"}}>
-                <h2>HAXE + React</h2>
-                <h3>ViewTwo</h3>
+                <h2>ViewTwo</h2>
+                <h3>HAXE + React</h3>
                 <ViewOne />
                 <ViewList />
             </div>
