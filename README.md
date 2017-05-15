@@ -1,6 +1,6 @@
 Desktop Application with NWjs
 ============================
- An experiment to work with Haxe, reactJS and NWjs.
+ An experiment with Haxe, reactJS and NWjs.
 
  - Done with [NWjs][1] for desktop Application
  - Prototype is ready now. Need to implement the actual application
