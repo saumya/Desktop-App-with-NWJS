@@ -29,6 +29,11 @@ sdk 0.21.4
 ../nwjs-sdk-v0.21.4-osx-x64/nwjs.app/Contents/MacOS/nwjs .
 ```
 
+sdk 0.23.2
+```
+../nwjs-sdk-v0.23.2-osx-x64/nwjs.app/Contents/MacOS/nwjs .
+```
+
 ### On windows
 
  1. The full path must be present while running from the code folder.
