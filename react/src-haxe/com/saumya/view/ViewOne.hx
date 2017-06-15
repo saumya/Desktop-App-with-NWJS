@@ -19,7 +19,7 @@ class ViewOne extends ReactComponent{
             <div style={{margin:"10px", border:"black 2px solid"}}>
                 <h3>ViewOne</h3>
                 <p>
-                If you know how to fix up the tools, then everything just works!
+                If you know how to fix up the tools, then everything just works! The Application is using HAXE.
                 </p>
             </div>
         ');
