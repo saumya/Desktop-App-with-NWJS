@@ -24,11 +24,6 @@ cd /Users/saumya/Documents/2_dev/3_apps/5_nwjs/1_chaos/src
 ../nwjs-sdk-v0.20.0-osx-x64/nwjs.app/Contents/MacOS/nwjs .
 ```
 
-sdk 0.21.4
-```
-../nwjs-sdk-v0.21.4-osx-x64/nwjs.app/Contents/MacOS/nwjs .
-```
-
 sdk 0.23.2
 ```
 ../nwjs-sdk-v0.23.2-osx-x64/nwjs.app/Contents/MacOS/nwjs .
@@ -41,6 +36,13 @@ sdk 0.23.2
 C:\Users\iAm\nwjs-sdk-v0.21.5-win-x64\nw.exe .
 ```
  2. [Realm][3] is not yet supported in Windows
+
+### On Linux
+
+sdk 0.23.3
+```
+../nwjs-sdk-v0.23.3-linux-x64/nw .
+```
 
 
 #### Research
