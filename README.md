@@ -24,9 +24,9 @@ cd /Users/saumya/Documents/2_dev/3_apps/5_nwjs/1_chaos/src
 ../nwjs-sdk-v0.20.0-osx-x64/nwjs.app/Contents/MacOS/nwjs .
 ```
 
-sdk 0.23.2
+sdk 0.23.3
 ```
-../nwjs-sdk-v0.23.2-osx-x64/nwjs.app/Contents/MacOS/nwjs .
+../nwjs-sdk-v0.23.3-osx-x64/nwjs.app/Contents/MacOS/nwjs .
 ```
 
 ### On windows
