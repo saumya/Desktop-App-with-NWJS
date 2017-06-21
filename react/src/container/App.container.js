@@ -8,6 +8,7 @@ import {ViewTwo} from '../haxeJS/ViewTwo'
 import {ViewList} from '../haxeJS/ViewList'
 // JS Componenets
 import HelloWorld from '../component/Hello.component'
+import Login from '../component/Login.component'
 
 
 class AppContainer extends Component{
@@ -17,6 +18,7 @@ class AppContainer extends Component{
             <div>
                 Application Container
                 <HelloWorld />
+                <Login />
             </div>
         )
     }
