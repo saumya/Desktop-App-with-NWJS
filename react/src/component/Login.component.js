@@ -20,6 +20,7 @@ function Login(props){
             <li>User Name: <input type="text" name="fname" /></li>
             <li>Password: <input type="text" name="lname" /></li>
             <li><button>Login</button></li>
+            <li><button>Register</button></li>
         </ul>
     </div>
   )
